@@ -18,7 +18,7 @@ public class Test {
     private MainPage mainPage;
     private ProductPage productPage;
     private SearchPage searchPage;
-
+    private int x;
 
     @BeforeClass
     public void setStart() {
