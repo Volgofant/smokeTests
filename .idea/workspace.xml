@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0370fa84-5c1e-4d1d-a5e7-47145a53a950" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,8 +59,55 @@
     </option>
   </component>
   <component name="RunManager" selected="TestNG.Test.checkLogin">
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="shop-smoke-test" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="shop-smoke-test" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="LiveAcceptanceTest" />
+      <module name="shop-smoke-test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Test" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -69,7 +118,7 @@
       </method>
     </configuration>
     <configuration name="Test.checkLogin" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="LiveAcceptanceTest" />
+      <module name="shop-smoke-test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Test" />
       <option name="METHOD_NAME" value="checkLogin" />
@@ -81,7 +130,7 @@
       </method>
     </configuration>
     <configuration name="Test.mainPageShouldHaveCategories" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="LiveAcceptanceTest" />
+      <module name="shop-smoke-test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Test" />
       <option name="METHOD_NAME" value="mainPageShouldHaveCategories" />
@@ -93,7 +142,7 @@
       </method>
     </configuration>
     <configuration name="Test.productPageFullCheck" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="LiveAcceptanceTest" />
+      <module name="shop-smoke-test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Test" />
       <option name="METHOD_NAME" value="productPageFullCheck" />
@@ -105,7 +154,7 @@
       </method>
     </configuration>
     <configuration name="Test.searchPageShouldHaveVisibleImage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="LiveAcceptanceTest" />
+      <module name="shop-smoke-test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Test" />
       <option name="METHOD_NAME" value="searchPageShouldHaveVisibleImage" />
