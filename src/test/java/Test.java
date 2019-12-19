@@ -20,7 +20,7 @@ public class Test {
     private SearchPage searchPage;
 
     @Before
-    void setStart() {
+    public void setStart() {
         WebDriverManager.chromedriver().version("75.0.3770.140").setup();
         ChromeOptions options = new ChromeOptions();
         options.setHeadless(true);
