@@ -83,7 +83,7 @@ public class MainTest {
     public void productPageFullCheck() {
         productPage = new ProductPage(driver);
         driver.get("https://shop.westwing.ru/all-products/?q=");
-        productPage.choiceRandomProduct((int) (Math.random() * 99) + 1);
+        productPage.choiceRandomProduct((int) (Math.random() * 98) + 1);
         driver.findElement(productPage.randomProduct).click();
         Assert.assertEquals(java.util.Optional.of(true), java.util.Optional.ofNullable(productPage.checkVisibleName()));
         String checkPoint = productPage.getProductImageUrl();
