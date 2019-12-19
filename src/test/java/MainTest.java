@@ -49,7 +49,7 @@ public class MainTest {
     }
 
     @org.junit.Test
-    public void mainBannerVisible() throws InterruptedException {
+    public void mainBannerVisible() {
         mainPage = new MainPage(driver);
         driver.get("https://shop.westwing.ru/");
         List<String> list = new ArrayList<>();
@@ -92,13 +92,14 @@ public class MainTest {
     }
 
     @org.junit.Test
-    public void checkLogin() {
+    public void checkLogin() throws InterruptedException {
         mainPage = new MainPage(driver);
         driver.get("https://shop.westwing.ru/customer/account/login/");
         driver.findElement(By.xpath("//input[@id=\"LoginForm_email\"]")).sendKeys("shopTestLogin@club.ru");
         driver.findElement(By.xpath("//input[@id=\"LoginForm_password\"]")).sendKeys("westwingpas");
         driver.findElement(By.xpath("//button[text()='Войти']")).click();
-        Assert.assertEquals(driver.findElement(By.xpath("//span[@class=\"l-header__bottom-item-subline\"]")).getText(), "Тест");
+        Thread.sleep(3000);
+        Assert.assertEquals("Тест", driver.findElement(By.xpath("//span[@class=\"l-header__bottom-item-subline\"]")).getText());
     }
 
     @After
