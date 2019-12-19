@@ -98,7 +98,7 @@ public class MainTest {
         driver.findElement(By.xpath("//input[@id=\"LoginForm_email\"]")).sendKeys("shopTestLogin@club.ru");
         driver.findElement(By.xpath("//input[@id=\"LoginForm_password\"]")).sendKeys("westwingpas");
         driver.findElement(By.xpath("//button[text()='Войти']")).click();
-        Thread.sleep(5000);
+        Thread.sleep(10000);
         Assert.assertEquals("Тест", driver.findElement(By.xpath("//span[@class=\"l-header__bottom-item-subline\"]")).getText());
     }
 
