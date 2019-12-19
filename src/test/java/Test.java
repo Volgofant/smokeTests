@@ -1,11 +1,11 @@
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,8 +19,8 @@ public class Test {
     private ProductPage productPage;
     private SearchPage searchPage;
 
-    @BeforeClass
-    public void setStart() {
+    @Before
+    void setStart() {
         WebDriverManager.chromedriver().version("75.0.3770.140").setup();
         ChromeOptions options = new ChromeOptions();
         options.setHeadless(true);
@@ -31,14 +31,14 @@ public class Test {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
-    @org.testng.annotations.Test
+    @org.junit.Test
     public void mainPageShouldHaveMissionText() {
         mainPage = new MainPage(driver);
         driver.get("https://shop.westwing.ru/");
         Assert.assertEquals("Вдохновлять и делать каждый дом красивым!", mainPage.getMissionText());
     }
 
-    @org.testng.annotations.Test
+    @org.junit.Test
     public void mainPageShouldHaveCategories() {
         mainPage = new MainPage(driver);
         driver.get("https://shop.westwing.ru/");
@@ -51,7 +51,7 @@ public class Test {
         Assert.assertTrue(cats);
     }
 
-    @org.testng.annotations.Test
+    @org.junit.Test
     public void mainBannerVisible() throws InterruptedException {
         mainPage = new MainPage(driver);
         driver.get("https://shop.westwing.ru/");
@@ -63,14 +63,14 @@ public class Test {
         }
     }
 
-    @org.testng.annotations.Test
+    @org.junit.Test
     public void searchPageShouldHave99Products() {
         searchPage = new SearchPage(driver);
         driver.get("https://shop.westwing.ru/all-products/?q=");
         Assert.assertEquals(java.util.Optional.of(100), java.util.Optional.ofNullable(searchPage.getCountAllProducts()));
     }
 
-    @org.testng.annotations.Test
+    @org.junit.Test
     public void searchPageShouldHaveVisibleImage() {
         searchPage = new SearchPage(driver);
         driver.get("https://shop.westwing.ru/all-products/?q=");
@@ -82,7 +82,7 @@ public class Test {
         }
     }
 
-    @org.testng.annotations.Test
+    @org.junit.Test
     public void productPageFullCheck() {
         productPage = new ProductPage(driver);
         driver.get("https://shop.westwing.ru/all-products/?q=");
@@ -94,7 +94,7 @@ public class Test {
         Assert.assertEquals(checkPoint, productPage.checkControlProductImage());
     }
 
-    @org.testng.annotations.Test
+    @org.junit.Test
     public void checkLogin() {
         mainPage = new MainPage(driver);
         driver.get("https://shop.westwing.ru/customer/account/login/");
@@ -104,7 +104,7 @@ public class Test {
         Assert.assertEquals(driver.findElement(By.xpath("//span[@class=\"l-header__bottom-item-subline\"]")).getText(), "Тест");
     }
 
-    @AfterClass
+    @After
     public void setDown() {
         driver.quit();
     }
