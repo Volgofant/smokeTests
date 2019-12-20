@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0370fa84-5c1e-4d1d-a5e7-47145a53a950" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,7 +57,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.Test.checkLogin">
+  <component name="RunManager" selected="JUnit.MainTest.checkLogin">
+    <configuration name="MainTest.checkLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shop-smoke-test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainTest" />
+      <option name="METHOD_NAME" value="checkLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="shop-smoke-test" />
       <option name="PACKAGE_NAME" value="" />
@@ -104,25 +115,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test.searchPageShouldHaveVisibleImage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="shop-smoke-test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test" />
-      <option name="METHOD_NAME" value="searchPageShouldHaveVisibleImage" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MainTest.checkLogin" />
         <item itemvalue="TestNG.Test.checkLogin" />
         <item itemvalue="TestNG.Test" />
         <item itemvalue="TestNG.Test.productPageFullCheck" />
         <item itemvalue="TestNG.Test.mainPageShouldHaveCategories" />
-        <item itemvalue="TestNG.Test.searchPageShouldHaveVisibleImage" />
       </list>
     </recent_temporary>
   </component>
