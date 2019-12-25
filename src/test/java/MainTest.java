@@ -5,9 +5,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class MainTest {
@@ -92,14 +94,14 @@ public class MainTest {
     }
 
     @org.junit.Test
-    public void checkLogin() throws InterruptedException {
+    public void checkLogin() {
         mainPage = new MainPage(driver);
         driver.get("https://shop.westwing.ru/customer/account/login/");
         driver.findElement(By.xpath("//input[@id=\"LoginForm_email\"]")).sendKeys("shopTestLogin@club.ru");
         driver.findElement(By.xpath("//input[@id=\"LoginForm_password\"]")).sendKeys("westwingpas");
         driver.findElement(By.xpath("//button[text()='Войти']")).click();
-        Thread.sleep(20000);
-        Assert.assertEquals("Тест", driver.findElement(By.xpath("//span[@class=\"l-header__bottom-item-subline\"]")).getText());
+        driver.findElement(By.xpath("//i[@class=\"l-header__bottom-item-icon l-header__bottom-item-icon--account\"]")).click();
+        Assert.assertEquals("Тест  Залогинивания", driver.findElement(By.cssSelector("#content > div.cl__container.global__aspectratio.set-width.w960 > main > div:nth-child(3) > div:nth-child(1) > div.accountStep1__row__box__main > p:nth-child(1)")).getText());
     }
 
     @After
