@@ -98,7 +98,7 @@ public class MainTest {
         mainPage = new MainPage(driver);
         driver.get("https://shop.westwing.ru/customer/account/login/");
         driver.findElement(By.xpath("//input[@id=\"LoginForm_email\"]")).sendKeys("shopTestLogin@club.ru");
-        driver.findElement(By.xpath("//input[@id=\"LoginForm_password\"]")).sendKeys("westwingpas");
+        driver.findElement(By.xpath("//input[@id=\"LoginForm_password\"]")).sendKeys("***");
         driver.findElement(By.xpath("//button[text()='Войти']")).click();
         driver.findElement(By.xpath("//i[@class=\"l-header__bottom-item-icon l-header__bottom-item-icon--account\"]")).click();
         Assert.assertEquals("Тест  Залогинивания", driver.findElement(By.cssSelector("#content > div.cl__container.global__aspectratio.set-width.w960 > main > div:nth-child(3) > div:nth-child(1) > div.accountStep1__row__box__main > p:nth-child(1)")).getText());
